@@ -10,7 +10,9 @@
   <?php
     //echo $this->Html->meta('icon');
 
-    //echo $this->Html->css('cake.generic');
+  echo $this->Html->css('foundation.min');
+  echo $this->Html->css('normalize');
+  echo $this->Html->css('style');
 
     //echo $this->fetch('meta');
     //echo $this->fetch('css');
@@ -18,10 +20,6 @@
   ?>
 
 	<title>Agence de mannequin</title>
-	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
- 	 <!-- fichier css -->
-  <link rel="stylesheet" href="css/style.css">
 
   <script src="js/vendor/modernizr.js"></script>
 
