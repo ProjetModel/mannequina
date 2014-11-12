@@ -1,0 +1,33 @@
+.header{
+	
+	height: 50px ; 
+
+}
+
+.container{
+	
+	height: 600px ; 
+}
+
+.footer{
+	background: black ; 
+	height: 40px ; 
+}
+.menu{
+	float: right;
+}
+.menu ul{
+	float: right; 
+	
+	
+}
+
+.menu li{
+	display: inline;
+	margin-right: 50px;
+}
+
+.logo{
+	float: left ;
+	font-size: 20px ;
+}
