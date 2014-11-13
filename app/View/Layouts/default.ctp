@@ -28,24 +28,24 @@
 
 <div class="row">
   <div class="large-12 colomns">
-   <div class="header">
+   <div class="header colomns large-12">
     
-      <div class="large-4 logo ">Logo</div>
-      <div class="large-8 menu">
+      <div class="colomns large-4 logo ">Logo</div>
+      <div class="colomns large-8 menu">
         <ul>
-          <li>Menu1</li>
-          <li>Menu2</li>
-          <li>Menu3</li>
-          <li>Menu4</li>
+          <li><a href="./signup">Home</a></li>
+          <li><a href="#">Mannequins</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./signup">S'inscrire</a></li>
         </ul>
       
       </div>
    </div>
 
-    <div class="container">
+    <div class="container colomns large-12">
       <?php echo $this->fetch('content'); ?>
     </div>
-    <div class="footer"></div>
+    <div class="footer colomns large-12"></div>
   </div>
 </div>
 

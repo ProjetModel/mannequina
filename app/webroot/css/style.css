@@ -6,15 +6,17 @@
 
 .container{
 	
-	height: 600px ; 
+	
 }
 
 .footer{
 	background: black ; 
 	height: 40px ; 
+	margin-top: 50px ;
 }
 .menu{
 	float: right;
+	margin-top: 20px ; 
 }
 .menu ul{
 	float: right; 
@@ -28,6 +30,7 @@
 }
 
 .logo{
+	margin-top: 20px ;
 
 	float: left ;
 	font-size: 20px ;
