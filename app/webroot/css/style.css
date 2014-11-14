@@ -1,6 +1,6 @@
 .header{
 	
-	height: 50px ; 
+	height: 100px;
 
 }
 
@@ -9,8 +9,13 @@
 	
 }
 
+.center{
+	margin-left: auto ; 
+	margin-right: auto ; 
+}
+
 .footer{
-	background: black ; 
+	background: red ; 
 	height: 40px ; 
 	margin-top: 50px ;
 }

@@ -33,13 +33,21 @@
       <div class="colomns large-4 logo ">Logo</div>
       <div class="colomns large-8 menu">
         <ul>
-          <li><a href="./signup">Home</a></li>
+          <li><a href="">Home</a></li>
           <li><a href="#">Mannequins</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="./signup">S'inscrire</a></li>
+          <li><?php echo $this->Html->link('S\'inscrire',array(
+                                                            'controller' => 'Users',
+                                                            'action' => 'signup',
+                                                            'full_base' => true )
+              ); ?></li>
+          <li><?php echo $this->Html->link('Se deconnecter',array(
+                                                            'controller' => 'Users',
+                                                            'action' => 'logout',
+                                                            'full_base' => true )
+              ); ?></li>   
         </ul>
-      
-      </div>
+      </div>  
    </div>
 
     <div class="container colomns large-12">
