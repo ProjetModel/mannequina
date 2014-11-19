@@ -30,8 +30,8 @@
   <div class="large-12 colomns">
    <div class="header colomns large-12">
     
-      <div class="colomns large-4 logo ">Logo</div>
-      <div class="colomns large-8 menu">
+      <div class="colomns large-2 logo ">Logo</div>
+      <div class="colomns large-10 menu">
         <ul>
           <li><?php echo $this->Html->link('Membres',array(
                                                             'controller' => 'Users',
@@ -44,8 +44,14 @@
                                                             'full_base' => true )
               ); ?></li>
           <li><?php echo $this->Html->link('Messagerie',array(
-                                                            'controller' => 'Users',
-                                                            'action' => 'signup',
+                                                            'controller' => 'Contacts',
+                                                            'action' => 'messages',
+                                                            'full_base' => true )
+              ); ?></li>
+
+               <li><?php echo $this->Html->link('Demandes',array(
+                                                            'controller' => 'Demandes',
+                                                            'action' => 'index',
                                                             'full_base' => true )
               ); ?></li>
           <li><?php echo $this->Html->link('Se deconnecter',array(

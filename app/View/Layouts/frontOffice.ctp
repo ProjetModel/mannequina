@@ -30,22 +30,24 @@
   <div class="large-12 colomns">
    <div class="header colomns large-12">
     
-      <div class="colomns large-4 logo ">Logo</div>
-      <div class="colomns large-8 menu">
+      <div class="colomns large-2 logo ">Logo</div>
+      <div class="colomns large-10 menu">
         <ul>
           <li><a href="">Home</a></li>
-          <li><a href="#">Mannequins</a></li>
-          <li><a href="#">About</a></li>
-          <li><?php echo $this->Html->link('S\'inscrire',array(
-                                                            'controller' => 'Users',
+          <li><a href="#">Cathegories</a></li>
+         
+          <li><?php echo $this->Html->link('Demande 3D Model',array(
+                                                            'controller' => 'Demandes',
                                                             'action' => 'signup',
                                                             'full_base' => true )
-              ); ?></li>
-          <li><?php echo $this->Html->link('Se deconnecter',array(
-                                                            'controller' => 'Users',
-                                                            'action' => 'logout',
+          ); ?></li>
+         <li><a href="#">About us</a></li>
+           <li><?php echo $this->Html->link('Contact us',array(
+                                                            'controller' => 'Contacts',
+                                                            'action' => 'index',
                                                             'full_base' => true )
-              ); ?></li>   
+          ); ?></li>
+        </ul>
         </ul>
       </div>  
    </div>

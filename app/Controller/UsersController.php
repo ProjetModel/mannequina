@@ -3,11 +3,11 @@ class UsersController extends AppController {
 
 	 public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('login','signup'); 
+        $this->Auth->allow('login'/*,'signup'*/); 
     }
 
     public function login() {
-         $this->layout = 'login';
+         $this->layout = 'frontOffice';
         //if already logged-in, redirect
         if($this->Session->check('Auth.User')){
             $this->redirect(array('action' => 'index'));      
@@ -28,6 +28,7 @@ class UsersController extends AppController {
         $this->redirect($this->Auth->logout());
     }
 
+    /*
 	public function signup() {
 		$this->layout = 'frontOffice';
 		if ($this->request->is('POST')) {
@@ -46,6 +47,7 @@ class UsersController extends AppController {
 			// retourner une erreur
 		}
 	}
+	*/
 
 	public function addAgent() {
 		$this->layout = 'backOffice';

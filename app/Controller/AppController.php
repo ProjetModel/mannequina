@@ -35,7 +35,7 @@ class AppController extends Controller {
 	public $components = array(
     'Session',
     'Auth' => array(
-        'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+        'loginRedirect' => array('controller' => 'Users', 'action' => 'index'),
         'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
         'authError' => 'Vous devez etre connecte pour voir cette page.',
         'loginError' => 'nom d\'utilisateur ou mot de passe incorrecte'
