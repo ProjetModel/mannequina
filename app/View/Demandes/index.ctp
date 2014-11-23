@@ -17,7 +17,8 @@
 			   	<td><?php echo $demande['Demande']['lastname']; ?></td>
 			   	<td><?php echo $demande['Demande']['firstname']; ?></td>
 			   	<td><?php echo $demande['Demande']['telephone']; ?></td>
-			   	<td><?php echo 2; ?></td> 
+			   	<td> <?php echo $this->Html->link($demande['Demande']['valide'],   array('action'=>'valider', $demande['Demande']['id']) ); ?> </td>
+                        
 			  </tr>
 			   <?php } ?>
 			</table> 	

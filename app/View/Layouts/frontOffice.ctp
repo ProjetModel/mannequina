@@ -51,7 +51,7 @@
         </ul>
       </div>  
    </div>
-
+   <?php echo $this->Session->flash(); ?>
     <div class="container colomns large-12">
       <?php echo $this->fetch('content'); ?>
     </div>

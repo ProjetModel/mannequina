@@ -35,10 +35,11 @@ class AppController extends Controller {
 	public $components = array(
     'Session',
     'Auth' => array(
-        'loginRedirect' => array('controller' => 'Users', 'action' => 'index'),
+        'loginRedirect' => array('controller' => 'DashBoards', 'action' => 'index'),
         'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
         'authError' => 'Vous devez etre connecte pour voir cette page.',
-        'loginError' => 'nom d\'utilisateur ou mot de passe incorrecte'
+        'loginError' => 'nom d\'utilisateur ou mot de passe incorrecte',
+        'authorize' => array('controller') // Ligne ajoutée
  
     ));
  
@@ -49,7 +50,8 @@ class AppController extends Controller {
 	 
 	public function isAuthorized($user) {
 	    // Here is where we should verify the role and give access based on role
-	     
+		$this->set("autoriserAgent", 1);
+		$this->set("autoriserInvite", 1);
 	    return true;
 	}
 

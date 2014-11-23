@@ -32,25 +32,38 @@
     
       <div class="colomns large-2 logo ">Logo</div>
       <div class="colomns large-10 menu">
-        <ul>
+        <ul>  
+          <?php if($autoriserInvite){ ?>
           <li><?php echo $this->Html->link('Membres',array(
                                                             'controller' => 'Users',
                                                             'action' => 'index',
                                                             'full_base' => true )
               ); ?></li>
-          <li><?php echo $this->Html->link('Ajouter Agent',array(
-                                                            'controller' => 'Users',
-                                                            'action' => 'addAgent',
-                                                            'full_base' => true )
-              ); ?></li>
+              <?php } ?>
+             
+              <?php if($autoriserAgent){ ?>
+                    <li><?php echo $this->Html->link('Ajouter Agent',array(
+                                                                      'controller' => 'Users',
+                                                                      'action' => 'addAgent',
+                                                                      'full_base' => true )
+                        ); ?></li>
+              <?php } ?>
+              <?php if($autoriserInvite){ ?>
           <li><?php echo $this->Html->link('Messagerie',array(
                                                             'controller' => 'Contacts',
                                                             'action' => 'messages',
                                                             'full_base' => true )
               ); ?></li>
-
+              <?php } ?>
+               <?php if($autoriserInvite){ ?>
                <li><?php echo $this->Html->link('Demandes',array(
                                                             'controller' => 'Demandes',
+                                                            'action' => 'index',
+                                                            'full_base' => true )
+              ); ?></li>
+               <?php } ?>
+               <li><?php echo $this->Html->link('3D Models',array(
+                                                            'controller' => 'TDs',
                                                             'action' => 'index',
                                                             'full_base' => true )
               ); ?></li>
@@ -62,6 +75,7 @@
         </ul>
       </div>  
    </div>
+   <?php echo $this->Session->flash(); ?>
 
     <div class="container colomns large-12">
       <?php echo $this->fetch('content'); ?>
