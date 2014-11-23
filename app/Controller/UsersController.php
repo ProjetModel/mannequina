@@ -170,7 +170,7 @@ class UsersController extends AppController {
 	  	$this->layout = 'backOffice';
 
         $this->paginate = array(
-            'limit' => 6,
+            'limit' => 10,
             'order' => array('User.username' => 'asc' )
         );
         $users = $this->paginate('User');
